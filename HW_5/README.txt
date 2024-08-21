@@ -1,0 +1,6 @@
+The WindData program is the main program that takes in a file specified by the user. It reads the data from that file and separates it into intervals specified by the user. The getInterval and getFileString methods get the interval and file name from the user. Then the histogram is updated with the Bin objects containing the interval (calculated with the user interval), the count, and the cumulative probability. The user can then perform probabilities based on their given wind value. The wind cumulative probabilities are exported to a file called 'cumProbability.txt'
+The Bin class constructs a Bin object with the interval, count, and cumulative probability. It also contains getters and setters for the Bin object. 
+
+The CDF JavaFX program creates a graph with the OLS and cumulative probabilities of each wind value squared. The 'cumProbability.txt' file is specified in the class. A sample 'cumProbability.txt' file for intervals of length 70 has been placed in the source file in order to use it within the class, but an updated version can be replaced with an updated file when running the WindData program. Originally I had the pathway to the file in the directory containing WindData, but placed the file in the CDF program so that it is able to obtain the file and be ran. 
+
+All classes have javaDoc comments as specified in the writeup. 
